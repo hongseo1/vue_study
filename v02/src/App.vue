@@ -23,7 +23,10 @@
         userName: 'user',
         num: 0,
         click_yes: true,
-        KValue: ''
+        KValue: '',
+        x: 0,
+        y: 0,
+        msg: ''
       }
     },
     methods: {
@@ -54,6 +57,13 @@
       getKey2(e){
         this.KValue = e.key;
         alert('alt + s 키를 눌렀습니다.')
+      },
+      mousePos(e){
+        this.x = e.offsetX;
+        this.y = e.offsetY;
+      },
+      mouseClick(e){
+        this.msg += this.x + ',' + this.y + "\n";
       }
     }
   };
@@ -131,6 +141,21 @@
     modifier(수정자) 종류 
     .enter .tab .delete .esc .space .up .down .left .right .center(마우스 가운데 누르는 버튼에 발생)
   -->
+
+  <h3>마우스 좌표 출력하기</h3>
+  <div id="display" v-on:mousemove="mousePos" v-on:click="mouseClick">
+    x: {{x}} <br/>
+    y: {{y}}
+  </div>
+  <textarea>{{msg}}</textarea>
+  <div id="display" v-on:mousemove="mousePos" v-on:click.right.prevent="mouseClick">
+    <!-- .right 마우스 우클릭 시 이벤트 발생, .prevent 마우스 우클릭 시에 나오는 창 안 뜨게(javascipt에서 .preventDefault()를 생각하면 쉬움) -->
+    x: {{x}} <br/>
+    y: {{y}}
+  </div>
 </template>
 
-<style></style>
+<style>
+  #display{width: 200px; height: 200px; background-color: goldenrod;}
+  textarea{height: 200px;}
+</style>
