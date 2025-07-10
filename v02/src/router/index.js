@@ -28,6 +28,8 @@ const page_titles = {
   '17': '17. Emit(방출하다.) 자식-> 부모 컴포넌트로 데이터 전달 및 Trigger할 수 있는 방법 제공',
   '18': '18. Provide와 inject 데이터의 효율적인 전달',
   '19': '19. Slot(자리, 넣다, 홈) 사용방법',
+  '20': '20. ref, reactive1',
+  '21': '21. ref, reactive2',
   // 필요한 만큼 페이지 제목을 추가
 };
 const routes = [
@@ -37,7 +39,7 @@ const routes = [
     component: home // 이 경로로 접속했을 때 보여줄 Vue 컴포넌트
   },
 ];
-const total_pages = 19; //총 페이지 수
+const total_pages = 21; //총 페이지 수
 
 for(let n=1; n<=total_pages; n++){
   const page_number_string = String(n).padStart(2,'0'); // 01 02 ..로 담음
