@@ -1,3 +1,4 @@
+<!-- page13 -->
 <script></script>
 <template>
     <h1>지역 컴포넌트</h1>
