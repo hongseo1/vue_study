@@ -1,30 +1,36 @@
-<script setup>
-    import { reactive, ref } from 'vue';
-
-    const count = ref(0);
-    /* const obj1 = ref({ //object(참조 타입)를 ref에 사용해도 정상 작동
-        name: "kim", age: 25
-    }); */
-    const obj1 = reactive({
-        name: "kim", age: 25
-    });
-
-    const good = () => {
-        //count.value++; //ref는 랩핑이 되기 때문에 this.cout++이 아닌 count.value 형식인 것(ref를 풀어서 value을 이용하여 count 값을 증가 시켜야함),
-        obj1.name = "lee" //reactive는 랩핑이 되어있지 않아서 obj1.value.name이 아닌 obj1.name 형식으로 바로 접근이 가능하다.
+<script>
+    export default{
+        data(){
+            return{
+                cnt: 0
+            }
+        },
+        computed:{
+            oddEven(){
+                return(this.cnt%2) ? '홀수' : '짝수';
+            }
+        },
+        methods: {
+            counter(){
+                this.cnt++;
+            }
+        }
     }
 </script>
 
 <template>
-    <div id="study22" class="study_box">
-        <h3>ref, reactive1</h3>
+    <div id="study21" class="study_box">
+        <h3>Composition API</h3>
         <div>
-            - ref: 원시타입에 주로 사용 / String, Number, Boolean 등 모든 타입(물론 Object, Array, Map, Set)에 사용 가능하다.(ex 삽: 주로 작은 건설현장(원시 타입)) <br/>
-            - reactive: Object, Array, Map, Set 같은 참조 타입에만(원시타입은 X) 사용할 수 있다. (ex 포크레인: 큰 건설현장(참조 타입))
+            Vue3에서 새롭게 등장한 함수 기반의 API로 컴포넌트 로직을 유연하게 구성하도록 지원하여 코드의 재사용성과 가독성을 높여준다. <br/>
+            기존 Option API와 Composition API의 비교 <br/>
+            - Option API: 지금까지 배운 거, 컴포넌트 로직을 Data, methods, computed, watch 등의 옵션에 담아서 구분함 <br/>
+            - Composition API: Vue3에서 새로 도입된 방식, 함수형 프로그래밍 스타일과 유사 관련 로직을 setup hook에 정의하여 사용, 코드의 재사용성이 높아져서 큰 프로젝트에 적합
         </div>
-        <!-- template에서는 자동으로 랩핑이 풀리기 때문에 count.value가 아닌 count로 바로 접근이 가능함 -->
-        <p>count: {{count}}</p>
-        <p>obj1: {{obj1.name}} / {{obj1.age}}</p>
-        <button @click="good">클릭</button>
+
+        <h2>기존 Options API 방식</h2>
+        <p>{{cnt}}</p>
+        <p>홀짝 판별: {{oddEven}}</p>
+        <button @click="counter">클릭</button>
     </div>
 </template>
