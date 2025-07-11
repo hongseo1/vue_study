@@ -39,6 +39,7 @@ const page_titles = {
   '28': '28. Composition API - watch 옵션 중 immediate와 deep CompositionAPI',
   '29': '29. Composition API - watchEffect',
   '30': '30. Composition API - defineProps',
+  '31': '31. Composition API - defineEmits',
   // 필요한 만큼 페이지 제목을 추가
 };
 const routes = [
@@ -48,7 +49,7 @@ const routes = [
     component: home // 이 경로로 접속했을 때 보여줄 Vue 컴포넌트
   },
 ];
-const total_pages = 30; //총 페이지 수
+const total_pages = 31; //총 페이지 수
 
 for(let n=1; n<=total_pages; n++){
   const page_number_string = String(n).padStart(2,'0'); // 01 02 ..로 담음
