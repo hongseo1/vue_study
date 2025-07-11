@@ -8,7 +8,7 @@
             - 패키지 바로 아래에 db.json파일 생성 및 내용 작성 <br/>
             <!-- 
                 db.json
-                "member":[ member 테이블
+                "member":[ member 테이블명
                     {
                         "id": 1,
                         "name": "홍길동",
