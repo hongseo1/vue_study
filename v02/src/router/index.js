@@ -40,7 +40,7 @@ const page_titles = {
   '29': '29. Composition API - watchEffect',
   '30': '30. Composition API - defineProps',
   '31': '31. Composition API - defineEmits',
-  '32': '32. Composition API - json-server 설치하기',
+  '32': '32. json-server 설치하기',
   // 필요한 만큼 페이지 제목을 추가
 };
 const routes = [
