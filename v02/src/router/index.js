@@ -31,9 +31,14 @@ const page_titles = {
   '20': '20. Composition API - 기존 Options API 방식',
   '21': '21. Composition API - Composition API 초창기 방식(setup hook에 정의)',
   '22': '22. Composition API - setup hook에 넣었던 내용을 더 간결하게(script에 setup)하는 방식',
-  '23': '23. Composition API - ref, reactive1',
-  '24': '24. Composition API - ref, reactive2',
+  '23': '23. Composition API - ref, reactive 사용1',
+  '24': '24. Composition API - ref, reactive 사용2',
   '25': '25. Composition API - 동적으로 클래스 적용 하기',
+  '26': '26. Composition API - computed 사용',
+  '27': '27. Composition API - watch 사용',
+  '28': '28. Composition API - watch 옵션 중 immediate와 deep CompositionAPI',
+  '29': '29. Composition API - watchEffect',
+  '30': '30. Composition API - defineProps',
   // 필요한 만큼 페이지 제목을 추가
 };
 const routes = [
@@ -43,7 +48,7 @@ const routes = [
     component: home // 이 경로로 접속했을 때 보여줄 Vue 컴포넌트
   },
 ];
-const total_pages = 25; //총 페이지 수
+const total_pages = 30; //총 페이지 수
 
 for(let n=1; n<=total_pages; n++){
   const page_number_string = String(n).padStart(2,'0'); // 01 02 ..로 담음
