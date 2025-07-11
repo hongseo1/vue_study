@@ -28,7 +28,7 @@
 </script>
 
 <template>
-    <div id="study06" class="study_box">
+    <div id="study05" class="study_box">
         <h3>v-on modifier 수정자</h3>
         <button v-on:click="createAlert1">클릭해 보세요.</button>
         <button v-on:click.once="createAlert2">클릭해 보세요.</button> <!-- once라는 수정자를 통해 한번만 클릭할 수 있도록 수정 -->

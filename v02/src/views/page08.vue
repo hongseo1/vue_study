@@ -17,7 +17,7 @@
 </script>
 
 <template>
-    <div id="study09" class="study_box">
+    <div id="study08" class="study_box">
         <h3>Dom 요소의 속성을 동적으로 변경하는 v-bind 디렉티브</h3>
         <a :href="url">{{site_name}}</a>
         <img :src="src" alt="사자">

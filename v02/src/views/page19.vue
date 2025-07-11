@@ -15,7 +15,7 @@
 </script>
 
 <template>
-    <div id="study20" class="study_box">
+    <div id="study19" class="study_box">
         <h3>Slot(자리, 넣다, 홈) 사용방법</h3>
         <div>
             Slot은 <br/>

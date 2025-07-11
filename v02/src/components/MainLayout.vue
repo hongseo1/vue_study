@@ -1,3 +1,4 @@
+<!-- page19 -->
 <template>
     <!-- slot 여러개 넣는 방법 -->
     <slot name="header"></slot>

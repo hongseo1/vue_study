@@ -27,7 +27,7 @@
 </script>
 
 <template>
-    <div id="study08" class="study_box">
+    <div id="study07" class="study_box">
         <h3>양방향 바인딩 v-model 디렉티브</h3>
         <p>{{inputName1}}</p> <!-- 단방향 -->
         <input type="text" v-model="inputName2"> <!-- 양방향 -->

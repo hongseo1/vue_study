@@ -22,7 +22,7 @@
 </script>
 
 <template>
-    <div id="study10" class="study_box">
+    <div id="study9" class="study_box">
         <h3>Class 바인딩</h3> <!-- 해당 클래스: true이면 해당 클래스 스타일 활성화, false이면 비활성화 -->
         <div class="border" :class="{bg: isActive, 'text-danger': hasError}">Warning</div> <!-- text-danger -이 있기 때문에 ''으로 감싸줘야 됨. -->
         <div class="border" :class="classObject">Warning</div> <!-- object형식으로 -->

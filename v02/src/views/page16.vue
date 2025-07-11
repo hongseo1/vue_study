@@ -19,7 +19,7 @@ export default{
 </script>
 
 <template>
-    <div id="study17" class="study_box">
+    <div id="study16" class="study_box">
         <h3>Props 부모->자식 컴포넌트로의 데이터 전달 수단</h3>
         <div>
             단방향 데이터 흐름을 가지고 있음(상위 속성 업데이트 -> 하위 속성 업데이트) / 반대는 허용을 하지 X(하위->상위)

@@ -18,7 +18,7 @@
 </script>
 
 <template>
-    <div id="study11" class="study_box">
+    <div id="study10" class="study_box">
         <h2>style 바인딩</h2>
         <div class="demo" v-bind:style="{width: myWidth}"></div>
         <div class="demo" @mouseover="initWidth" :style="{width: myWidth1 + 'px'}"></div>

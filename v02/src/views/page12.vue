@@ -37,7 +37,7 @@
 </script>
 
 <template>
-    <div id="study13" class="study_box">
+    <div id="study12" class="study_box">
         <h3>watcher 속성</h3>
         <p>반응형 속성이 변경될 때마다 함수를 트리거할 수 있다.</p>
         <div>

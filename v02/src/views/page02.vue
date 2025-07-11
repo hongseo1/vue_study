@@ -28,9 +28,7 @@
         <p v-if="score3">이 영역은 v-if 입니다.</p>
         <p v-show="score3">이 영역은 v-show 입니다.</p> 
         <!-- v-show는 값이 거짓일 경우 display: none; 이지만 v-if는 아예 영역 자체가 x 즉, 자주 변경되지 않는 영역일 경우 v-if를 사용, 토글 같이 비번하게 노출되거나 사라지는 영역일 경우 v-show를 사용할 수 있다.   -->
-    </div>
-
-    <div id="study03" class="study_box">
+    
         <h3>v-for</h3>
         <ul>
         <li>배열 하나하나 데이터 가져오기</li>

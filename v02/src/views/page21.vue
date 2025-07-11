@@ -1,5 +1,5 @@
 <script>
-    import { computed, ref } from 'vue';
+    import { computed, ref } from 'vue'; //ref는 반응형 변수를 선언할 때 사용
     export default{
         setup(){ //Composition API setup hook에 정의 (처음 Composition API도입했을 때 방식(초창기 방식))
             const cnt = ref(0);
@@ -16,7 +16,7 @@
 </script>
 
 <template>
-    <div id="study22" class="study_box">
+    <div id="study21" class="study_box">
         <h3>Composition API</h3>
         <div>
             Vue3에서 새롭게 등장한 함수 기반의 API로 컴포넌트 로직을 유연하게 구성하도록 지원하여 코드의 재사용성과 가독성을 높여준다. <br/>

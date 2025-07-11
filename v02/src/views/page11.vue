@@ -29,7 +29,7 @@
 </script>
 
 <template>
-    <div id="study12" class="study_box">
+    <div id="study11" class="study_box">
         <h3>Computed 계산된 속성</h3>
         <div>
         1. Cahing (계산 결과를 보관하고 있다가 다음번 호출에서는 재계산을 하지 않고 값을 불러줌) <br/>

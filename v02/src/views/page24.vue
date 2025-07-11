@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <div id="study25" class="study_box">
+    <div id="study24" class="study_box">
         <h3>Composition API - ref, reactive2</h3>
         
         <h1 ref="a" id="b">안녕하세요~</h1>

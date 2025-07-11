@@ -19,7 +19,7 @@ export default{
 </script>
 
 <template>
-    <div id="study18" class="study_box">
+    <div id="study17" class="study_box">
         <h3>Emit(방출하다.) 자식-> 부모 컴포넌트로 데이터 전달 및 Trigger할 수 있는 방법 제공</h3>
         <div>
             emit 사용 순서 <br/>

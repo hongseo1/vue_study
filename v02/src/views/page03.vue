@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <div id="study04" class="study_box">
+    <div id="study03" class="study_box">
         <h3>v-on 이벤트 핸들링</h3>
         <p>{{"count: " + count}}</p>
         <button v-on:click="count++">숫자 증가</button> <!-- v-on:이벤트="이벤트 결과" -->

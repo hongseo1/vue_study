@@ -8,7 +8,7 @@ import LocalComponent from "../components/LocalChild.vue"; //../src > @로 생�
 </script>
 
 <template>
-    <div id="study14" class="study_box">
+    <div id="study13" class="study_box">
         <h3>Component 지역 컴포넌트와 전역 컴포넌트</h3>
         <div>
         Vue 컴포넌트는 UI를 구성하는 독립적인 재사용 가능한 블록이다. <br/>

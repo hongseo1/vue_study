@@ -20,7 +20,7 @@
 </script>
 
 <template>
-    <div id="study07" class="study_box">
+    <div id="study06" class="study_box">
         <h3>마우스 좌표 출력하기</h3>
         <div class="mouse_click_x_y_wrap">
         <div id="display" v-on:mousemove="mousePos" v-on:click="mouseClick">

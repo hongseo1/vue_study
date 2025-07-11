@@ -24,7 +24,7 @@
 </script>
 
 <template>
-    <div id="study05" class="study_box">
+    <div id="study04" class="study_box">
         <h3>methods 옵션, 사용자 함수 / 메서드 만들기</h3>
         <p>{{greeting1()}}</p> <!-- greeting 메서드 호출 -->
         <p>{{greeting2('Tom')}}</p> <!-- greeting 메서드 호출 > 인자 값 'Tom' 전달 > 출력 -->

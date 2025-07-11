@@ -26,7 +26,7 @@
 </script>
 
 <template>
-    <div id="study15" class="study_box">
+    <div id="study14" class="study_box">
         <h3>컴포넌트 생명주기 (component Lifecycle)</h3>
         <div>
         생명주기에 사용하는 훅(hook) <br/>

@@ -18,7 +18,7 @@ export default{
 </script>
 
 <template>
-    <div id="study19" class="study_box">
+    <div id="study18" class="study_box">
         <h3>값을 전달할 때 사용하는 Provide와 inject (데이터의 효율적인 전달)</h3>
         <div>
             Provide와 inject는 props의 단점을 개선하기 위해서 등장 <br/>

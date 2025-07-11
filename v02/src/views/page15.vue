@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <div id="study16" class="study_box">
+    <div id="study15" class="study_box">
         <h3>ref $refs, ref document.getElememtById와 비슷</h3>
         <div>
         DOM 요소에 고유한 참조자를 제공하는 특별한 속성 <br/>

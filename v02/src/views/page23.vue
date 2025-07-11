@@ -16,7 +16,7 @@
 </script>
 
 <template>
-    <div id="study24" class="study_box">
+    <div id="study23" class="study_box">
         <h3>Composition API - ref, reactive1</h3>
         <div>
             - ref: 원시타입에 주로 사용 / String, Number, Boolean 등 모든 타입(물론 Object, Array, Map, Set)에 사용 가능하다.(ex 삽: 주로 작은 건설현장(원시 타입)) <br/>
