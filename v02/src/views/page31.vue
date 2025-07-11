@@ -1,8 +1,9 @@
 <script setup>
     import ChildComponent31 from '../components/ChildComponent31.vue';
 
-    const handleCustomEvent = (massage) => {
-        console.log('Received event: ' + massage)
+    //하위 컴포넌트의 이벤트를 받을 수 있는 함수 정의
+    const handleCustomEvent = (massage) => {//하위 컴포넌트에서 받은 메시지를 인자로 받아서
+        console.log('Received event: ' + massage)//콘솔에 출력
     }
 </script>
 
@@ -23,6 +24,6 @@
         </div>
 
         <ChildComponent31 @customEvent="handleCustomEvent"/>
-        
+        <!-- @customEvent: 하위 컴포넌트에서 customEvent이벤트가 발생하면 감지, handleCustomEvent: 감지후 실행될 상위 컴포넌트 함수  -->
     </div>
 </template>
