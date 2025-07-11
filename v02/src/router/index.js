@@ -48,7 +48,7 @@ const routes = [
     component: home // 이 경로로 접속했을 때 보여줄 Vue 컴포넌트
   },
 ];
-const total_pages = 31; //총 페이지 수
+const total_pages = 30; //총 페이지 수
 
 for(let n=1; n<=total_pages; n++){
   const page_number_string = String(n).padStart(2,'0'); // 01 02 ..로 담음
