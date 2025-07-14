@@ -51,7 +51,7 @@ const page_titles = {
 const routes = [
   {
     path: '/', // URL 경로 (루트 경로)
-    name: 'home', // 라우트 이름 (선택 사항이지만 유용)
+    name: 'home', // 라우트 이름 (선택 사항이지만 유용)git
     component: home // 이 경로로 접속했을 때 보여줄 Vue 컴포넌트
   },
 ];
