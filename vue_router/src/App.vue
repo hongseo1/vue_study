@@ -13,35 +13,8 @@
             <br/>
             Vue-Router 설치 <br/>
             npm install vue-router <br/>
-            src/router/index.js파일에
-
-            /* page43 */
-            import {createRouter, createWebHistory} from 'vue-router';
-            import HomeView from '@/components/HomeView.vue';
-            import AboutView from '@/components/AboutView.vue';
-            import HelloView from '@/components/HelloView.vue';
-
-            const routes = [
-                {
-                    path: '/homeview',
-                    component: HomeView
-                },
-                {
-                    path: '/about',
-                    component: AboutView
-                },
-                {
-                    path: '/hello',
-                    component: HelloView
-                }
-            ]
-
-            const router = createRouter({
-                history: createWebHistory('/'),
-                routes
-            });
-
-            export default router
+            src/router/index.js파일에 router사용에 필요한 정보 입력 <br/>
+            Route와 Router (about page route/hello page router)
         </div>
         <TheHeader></TheHeader>
         <TheBody></TheBody>
