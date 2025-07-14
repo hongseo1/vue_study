@@ -3,7 +3,6 @@
     const route = useRoute();
 
     console.log('route.path' + route.path);
-
 </script>
 
 <template>
