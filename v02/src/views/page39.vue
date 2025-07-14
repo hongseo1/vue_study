@@ -30,6 +30,9 @@
     };
 
     const deleteData = async (id) => {
+        if(!confirm('삭제하시겠습니까?')){ //블록 중첩을 피하는 것이 좋기에 false일 경우에는 그냥 종료, true면 빠져나가서 try catch문을 실행하도록 한다.
+            return false;
+        }
         try{
             await axios.delete('http://localhost:3000/member/' + id);
             getData();
@@ -66,6 +69,7 @@
                             <th>Id</th>
                             <th>Name</th>
                             <th>Email</th>
+                            <th>(*)</th>
                         </tr>
                     </thead>
                     <tbody>
