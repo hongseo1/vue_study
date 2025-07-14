@@ -46,6 +46,7 @@ const page_titles = {
   '35': '35. Bootstrap 설치 및 적용하기',
   '36': '36. async와 await',
   '37': '37. form으로 데이터 입력 받아 서버에 저장하기',
+  '38': '38. 이전에 .forEach부분 v-for로 변경하기',
   // 필요한 만큼 페이지 제목을 추가
 };
 const routes = [
@@ -55,7 +56,7 @@ const routes = [
     component: home // 이 경로로 접속했을 때 보여줄 Vue 컴포넌트
   },
 ];
-const total_pages = 37; //총 페이지 수
+const total_pages = 38; //총 페이지 수
 
 for(let n=1; n<=total_pages; n++){
   const page_number_string = String(n).padStart(2,'0'); // 01 02 ..로 담음
