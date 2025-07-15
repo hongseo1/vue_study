@@ -11,11 +11,16 @@ const routes = [
         name: 'HomePage', //name 지정시 .vue에서 route를 이용하여 route.name을 출력할 수 있다.
         component: HomeView
     },
+    {//redirect: url이 /aboutus(레거시(이전부터 존재하던 페이지))에서 /about으로 변경되었을 때 /aboutus url로 들어왔어도 /about으로 리다이렉트시켜준다.(페이지 이동) / 특정 경로로 들어오는 모든 요청을 다른 표준 경로로 통일 시키고 싶을 때나 사용자가 실수로 다른 경로를 입력했을 때 올바른 페이지로 보내줄 때 사용 (주로 영구적인 경로 변경 시)
+        path: '/aboutus',
+        redirect: '/about'
+    },
     {
         path: '/about',
         name: 'AboutPage',
-        component: AboutView
-    },
+        component: AboutView,
+        alias: '/about_new' //alias(별칭): 같은 페이지를 다른 path로 접근할 수 있게해주는 속성 / 하나의 컴포넌트에서 여러개의 유요한 url을 부여하고 싶을 때나 url을 변경하지 않고도 다른 경로로 페이지에 접근할 수 있도록 하고 싶을때(ex. 검색엔진 최적화를 위해 여러 키워드 url을 사용)
+    },//redirect와 alias 차이 redirect는 url 변경이 있고 브라우저 히스토리에 새 경로를 푸시하고, alias는 url변경이 없으며 현재 경로를 유지하면서 해당 라우트와 매칭 한다
     {
         path: '/hello',
         name: 'HelloPage',
