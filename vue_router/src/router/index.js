@@ -33,17 +33,29 @@ const routes = [
         children: [{
             path: 'intro', //앞에 /가 붙지 않는 이유: url경로가 company/intro이여야 하는데 /intro라고 인식하게 됨 또한 직접 company/intro으로 지정해도 무방하나 나주에 앞에 경로가 바뀌면 유지보수가 어려움 즉, 유지보수 향상을 위해 children을 활용해 /없이 하위 페이지 정보 작성 
             name: 'company-intro',
-            component: () => import ('@/components/company/IntroView.vue')
+            components: { //component의 복수형 components으로 여러개의 컴포넌트를 임포트할 수 있다.
+                header: () => import ('@/components/company/HeaderView.vue'),
+                body: () => import ('@/components/company/IntroView.vue'),
+                footer: () => import ('@/components/company/FooterView.vue')
+            }
         },
         {
             path: 'map',
             name: 'company-map',
-            component: () => import ('@/components/company/MapView.vue')
+            components: {
+                header: () => import ('@/components/company/HeaderView.vue'),
+                body: () => import ('@/components/company/MapView.vue'),
+                footer: () => import ('@/components/company/FooterView.vue')
+            }
         },
         {
             path: 'history',
             name: 'company-history',
-            component: () => import ('@/components/company/HistoryView.vue')
+            components: {
+                header: () => import ('@/components/company/HeaderView.vue'),
+                body: () => import ('@/components/company/HistoryView.vue'),
+                footer: () => import ('@/components/company/FooterView.vue')
+            }
         }]
     },
     {

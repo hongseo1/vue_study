@@ -6,5 +6,7 @@
         <RouterLink :to="{name: 'company-history'}" active-class="on">회사 연혁</RouterLink>
     </p>
 
-    <RouterView></RouterView>
+    <RouterView name="header"></RouterView>
+    <RouterView name="body"></RouterView>
+    <RouterView name="footer"></RouterView>
 </template>
