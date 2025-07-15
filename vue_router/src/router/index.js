@@ -27,6 +27,26 @@ const routes = [
         component: ProductView
     },
     {
+        path: '/company',
+        name: 'CompanyPage',
+        component: () => import('@/components/company/CompanyView.vue'), //동적 임포트: 해당 url이 호출이 될때 해당 컴포넌트가 들어오는 방식(비동기적 로딩) 자주 사용하지 않는 페이지에 적용시 효율적(애플리케이션의 초기 로딩 속도 향상)
+        children: [{
+            path: 'intro', //앞에 /가 붙지 않는 이유: url경로가 company/intro이여야 하는데 /intro라고 인식하게 됨 또한 직접 company/intro으로 지정해도 무방하나 나주에 앞에 경로가 바뀌면 유지보수가 어려움 즉, 유지보수 향상을 위해 children을 활용해 /없이 하위 페이지 정보 작성 
+            name: 'company-intro',
+            component: () => import ('@/components/company/IntroView.vue')
+        },
+        {
+            path: 'map',
+            name: 'company-map',
+            component: () => import ('@/components/company/MapView.vue')
+        },
+        {
+            path: 'history',
+            name: 'company-history',
+            component: () => import ('@/components/company/HistoryView.vue')
+        }]
+    },
+    {
         path: '/:pathMatch(.*)*',
         name: "NotFoundPage",
         component: NotFoundView

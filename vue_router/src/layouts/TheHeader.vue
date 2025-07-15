@@ -26,7 +26,8 @@ import { RouterLink } from 'vue-router';
         <RouterLink :to="{name: 'HomePage'}" active-class="on">Home</RouterLink> |
         <RouterLink to="/about" active-class="on">About</RouterLink> |
         <RouterLink to="/hello" active-class="on">hello</RouterLink> |
-        <RouterLink :to="{name: 'ProductPage', params:{id: '1'}, query:{lang:'ko'}}" active-class="on">product 1</RouterLink>
+        <RouterLink :to="{name: 'ProductPage', params:{id: '1'}, query:{lang:'ko'}}" active-class="on">product 1</RouterLink> |
+        <RouterLink :to="{name: 'CompanyPage'}" active-class="on">Company</RouterLink>
         <!-- active-class="on" router-link-active대신 on 클래스로 active 효과 적용 -->
     </p>
 </template>
