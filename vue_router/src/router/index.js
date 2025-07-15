@@ -6,14 +6,17 @@ import HelloView from '@/components/HelloView.vue';
 const routes = [
     {
         path: '/',
+        name: 'HomePage', //name 지정시 .vue에서 route를 이용하여 route.name을 출력할 수 있다.
         component: HomeView
     },
     {
         path: '/about',
+        name: 'AboutPage',
         component: AboutView
     },
     {
         path: '/hello',
+        name: 'HelloPage',
         component: HelloView
     }
 ]
