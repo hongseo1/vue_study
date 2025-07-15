@@ -19,7 +19,13 @@ const routes = [
         path: '/about',
         name: 'AboutPage',
         component: AboutView,
-        alias: '/about_new' //alias(별칭): 같은 페이지를 다른 path로 접근할 수 있게해주는 속성 / 하나의 컴포넌트에서 여러개의 유요한 url을 부여하고 싶을 때나 url을 변경하지 않고도 다른 경로로 페이지에 접근할 수 있도록 하고 싶을때(ex. 검색엔진 최적화를 위해 여러 키워드 url을 사용)
+        alias: '/about_new', //alias(별칭): 같은 페이지를 다른 path로 접근할 수 있게해주는 속성 / 하나의 컴포넌트에서 여러개의 유요한 url을 부여하고 싶을 때나 url을 변경하지 않고도 다른 경로로 페이지에 접근할 수 있도록 하고 싶을때(ex. 검색엔진 최적화를 위해 여러 키워드 url을 사용)
+
+        //beforeEnter: 특정 개별 라우트로 진입하기 전에만 실행, 시점: 해당 path로 접근하려고 할 때만 실행. 라우트에서 나갈 때는 실행되지 않음
+        beforeEnter: (to, from, next) => {
+            console.log('라우터별 가드: beforeEnter')
+            next()
+        }
     },//redirect와 alias 차이 redirect는 url 변경이 있고 브라우저 히스토리에 새 경로를 푸시하고, alias는 url변경이 없으며 현재 경로를 유지하면서 해당 라우트와 매칭 한다
     {
         path: '/hello',
@@ -74,5 +80,18 @@ const router = createRouter({
     history: createWebHistory('/'),
     routes
 });
+
+//전역 가드
+/* 
+//beforeEach: Vue 애플리케이션의 모든 라우트 이동 시점에 실행. 시점: 어떤 페이지에서 어떤 페이지로 이동하든지, 심지어 초기 페이지 로드 시에도 항상 가장 먼저 실행
+router.beforeEach((to, from, next) => {//해당 라우터로 이동하기 전에 시행됨 to, from, next(어디로 가는지, 어디에서 왔는지, 콜백함수)
+    console.log(to)
+    console.log(from)
+    if(to.fullPath !== '/company'){//가고자하는 fullPath가(페이지가) /company 아닌경우에만
+        next() //호출 해줘야 페이지 이동
+    }
+    
+})
+*/
 
 export default router
