@@ -7,7 +7,7 @@ import NotFoundView from '@/components/NotFoundView.vue';
 
 const routes = [
     {
-        path: '/',
+        path: '/home22',
         name: 'HomePage', //name 지정시 .vue에서 route를 이용하여 route.name을 출력할 수 있다.
         component: HomeView
     },
