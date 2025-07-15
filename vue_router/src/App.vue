@@ -6,7 +6,7 @@
 
 <template>
     <div id="study43" class="study_box">
-        <h3>Vue-Router1</h3>
+        <h3>Vue-Router</h3>
         <div>
             Vue.js를 이용하여 Single Page Application를 구현할 때 사용하는 Vue.js의 공식 라우터 <br/>
             URL에 따라서 어떤 컴포넌트를 보여줄 지 매핑해주는 라이브러리 <br/>
