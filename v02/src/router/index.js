@@ -49,6 +49,9 @@ const page_titles = {
   '40': '40. 서버 데이터 수정하기',
   '41': '41. Pagination',
   '42': '42. Axios, async와 await, 데이터 입력, 서버에 저장, 삭제, 수정, Pagination 전체적인 설명',
+  '43': '43. Vue-Router (GitHub vue_study/vue_router 참고)',
+  '44': '44. Pinia (GitHub vue_study/pinia 참고)',
+  '45': '45. DefineModel',
   // 필요한 만큼 페이지 제목을 추가
 };
 const routes = [
@@ -58,7 +61,7 @@ const routes = [
     component: home // 이 경로로 접속했을 때 보여줄 Vue 컴포넌트
   },
 ];
-const total_pages = 42; //총 페이지 수
+const total_pages = 45; //총 페이지 수
 
 for(let n=1; n<=total_pages; n++){
   const page_number_string = String(n).padStart(2,'0'); // 01 02 ..로 담음
