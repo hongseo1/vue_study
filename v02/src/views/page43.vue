@@ -1,5 +1,6 @@
 <template>
-    <h3>Vue-Router (GitHub vue_study/vue_router 참고)</h3>
+    <div id="study43" class="study_box">
+        <h3>Vue-Router (GitHub vue_study/vue_router 참고)</h3>
         <div>
             Vue.js를 이용하여 Single Page Application를 구현할 때 사용하는 Vue.js의 공식 라우터 <br/>
             URL에 따라서 어떤 컴포넌트를 보여줄 지 매핑해주는 라이브러리 <br/>
@@ -55,4 +56,5 @@
             * 라우터 가드(index.js routes = [] /about 부분 확인): <br/>
             특정 라우트 정의 안에 직접 설정하는 가드 beforeEnter 대표적, 해당 라우터로 진입하기 전에만 실앵, 전역 가드보다 범위가 좁고, 컴포넌트 가드보다는 범위가 넓다.(활용 사례: 특저 라우트에 대한 권한 확인(관리자 페이지, 마이 페이지 등 특정 권한이 필요한 라우트에만 적용하여 권한 없는 사용자의 접근을 막을 때 사용), 특정 라우트 진입 전 로딩(해당 라우트에서만 필요한 데이터를 미리 로딩해야할 경우 활용 가능))
         </div>
+    </div>
 </template>
