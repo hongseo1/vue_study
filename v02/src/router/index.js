@@ -53,7 +53,7 @@ const page_titles = {
   '44': '44. Pinia (GitHub vue_study/pinia 참고)',
   '45': '45. DefineModel',
   '46': '46. Prop Drilling / Pinia를 통한 해결',
-  '47': '47. Prop Drilling / Provide와 inject를 통한 해결',
+  '47': '47. Prop Drilling / Provide와 Inject를 통한 해결',
   '48': '48. Tailwind CSS 사용하기',
   // 필요한 만큼 페이지 제목을 추가
 };
