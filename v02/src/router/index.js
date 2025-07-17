@@ -53,6 +53,7 @@ const page_titles = {
   '44': '44. Pinia (GitHub vue_study/pinia 참고)',
   '45': '45. DefineModel',
   '46': '46. Prop Drilling / Pinia를 통한 해결',
+  '47': '47. Tailwind CSS 사용하기',
   // 필요한 만큼 페이지 제목을 추가
 };
 const routes = [
@@ -62,7 +63,7 @@ const routes = [
     component: home // 이 경로로 접속했을 때 보여줄 Vue 컴포넌트
   },
 ];
-const total_pages = 46; //총 페이지 수
+const total_pages = 47; //총 페이지 수
 
 for(let n=1; n<=total_pages; n++){
   const page_number_string = String(n).padStart(2,'0'); // 01 02 ..로 담음
