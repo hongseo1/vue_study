@@ -11,7 +11,7 @@
 
 <template>
     <div id="study46" class="study_box">
-        <h3>Prop Drilling / Pinia를 통한 해결</h3>
+        <h3>Props Drilling / Pinia를 통한 해결</h3>
         <div>
             Prop Drilling: 드릴로 구멍을 뚫는 것처럼, 하위의 하위 컴포넌트(자손)에 데이터를 전달하기 위해 중간 단계의 컴포넌트를 거치는 것 <br/>
             page46에서 전달 First46에서 받아서 다시 전달 Second46에서 받아서 출력 이 과정은 중간에 First46에서도 Second46에서 props를 거쳐서 전달하고 받지만 Pinia를 사용해서 page46에서 Second46으로 First46에서 데이터를 거치지 않고 보낼 수 있다.
