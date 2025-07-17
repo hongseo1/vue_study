@@ -53,7 +53,8 @@ const page_titles = {
   '44': '44. Pinia (GitHub vue_study/pinia 참고)',
   '45': '45. DefineModel',
   '46': '46. Prop Drilling / Pinia를 통한 해결',
-  '47': '47. Tailwind CSS 사용하기',
+  '47': '47. Prop Drilling / Provide와 inject를 통한 해결',
+  '48': '48. Tailwind CSS 사용하기',
   // 필요한 만큼 페이지 제목을 추가
 };
 const routes = [
@@ -63,7 +64,7 @@ const routes = [
     component: home // 이 경로로 접속했을 때 보여줄 Vue 컴포넌트
   },
 ];
-const total_pages = 47; //총 페이지 수
+const total_pages = 48; //총 페이지 수
 
 for(let n=1; n<=total_pages; n++){
   const page_number_string = String(n).padStart(2,'0'); // 01 02 ..로 담음
@@ -74,7 +75,7 @@ for(let n=1; n<=total_pages; n++){
     name: `Page${page_number_string}`,
     component: import_page_commpoenet(n),
     meta: {
-      title: title_for_page // 이 제목이 App.vue에서 사용됩니다.
+      title: title_for_page // 이 제목이 App.vue에서 사용
     }
   });
 }
@@ -99,7 +100,7 @@ import page13 from '../views/page13.vue'; */
   /* {
     path: '/contact',
     name: 'Contact',
-    // 라우트를 지연 로딩할 수도 있습니다. (성능 최적화)
+    // 라우트를 지연 로딩할 수도 있다. (성능 최적화)
     component: () => import('../views/ContactView.vue')
   } */
 //];
