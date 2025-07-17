@@ -1,22 +1,28 @@
 <script setup>
+    import First47 from '@/components/First47.vue';
+    import { ref, provide } from 'vue'; //provide: 정의할 때
 
+    
+    const count = ref(0);
+    provide('count', count)
+    const increment = () => count.value++;
 </script>
 
 <template>
     <div id="study47" class="study_box">
-        <h3>Tailwind CSS 사용하기</h3>
+        <h3>Props Drilling / Provide와 Inject를 통한 해결</h3>
         <div>
-            설치: https://v2.tailwindcss.com/docs/guides/vue-3-vite
-            npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
-            npm install tailwindcss@latest @tailwindcss/vite@latest -D
-            npm install -D tailwindcss postcss autoprefixer
-            npx tailwindcss init -p = 안됨(4.0 버전 이후로 init 명령어가 안 되고 tailwind.config.css 파일이 없어졌다. )
-            Tailwind CSS 4.0 버전부터 PostCSS 플러그인이 별도의 패키지로 분리. 이전 버전에서는 tailwindcss 패키지 자체가 PostCSS 플러그인 역할을 했지만, 4.0 버전부터는 구조가 변경
-            npm install @tailwindcss/postcss --save-dev
-
-            여러 방법을 찾아봤지만 버전 4.0 정보는 공식 문서를하고 제외 별로 없다..
-            강의 내용 처럼 하려면 버전을 낮추는 방법 밖에 없을 듯.. 
-            tailwindcss의 장단점이 있으니 필요 시에 다시 공부해보자...
+            provide: 데이터를 제공(정의)할 때 사용, 특정 컴포넌트(부모 컴포넌트)에서 값을 정의하여 하위 컴포넌트들에게 "제공"하고, 이 값을 기억하게 한다.
+            inject: 제공된 데이터를 주입(사용)할 때 사용, provide를 통해 제공된 값을 하위 컴포넌트에서 "꺼내서" 사용할 수 있게 한다.
         </div>
+        <p>App</p>
+        <button @click="increment">Counting</button>
+        {{count}}
+        <!-- <first47 :count/> -->
+        <first47/>
     </div>
 </template>
+
+<style scoped>
+    div{border: 3px solid black; padding: 30px;}
+</style>
